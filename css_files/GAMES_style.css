@@ -142,6 +142,11 @@ font-size:24px;
 text-align:justify;
 
 }
+.jumbotron img {
+  max-width: 100%;
+  height: auto !important;
+  box-sizing: border-box;
+}
 
 /*主讲人图片*/
 .placeholders {
@@ -184,6 +189,16 @@ text-align:justify;
 text-align:center;
 border-top: 1px solid #9a9a9a;
 margin-bottom:0px;
+max-width: 100%;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+}
+.tableA > table {
+  width: 100%;
+}
+.tableA td,
+.tableA th {
+  word-break: break-word;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     padding: 4px;

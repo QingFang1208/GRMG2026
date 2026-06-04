@@ -154,11 +154,30 @@ text-align:justify;
 .placeholder {
   margin-bottom: 20px;
 }
-.placeholder img {
+.speaker-photo {
   display: inline-block;
+  position: relative;
+  width: 146px;
+  height: 146px;
+  overflow: hidden;
   border-radius: 50%;
-
   box-shadow: 2px 2px 5px #888888;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+.speaker-photo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: var(--photo-width, auto);
+  height: var(--photo-height, 100%);
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: translate(-50%, -50%) translate(var(--photo-x, 0px), var(--photo-y, 0px)) scale(var(--photo-scale, 1));
+  transform-origin: center center;
 }
 .tableA{
 
